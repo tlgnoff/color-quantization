@@ -3,9 +3,7 @@ import random
 import numpy as np
 import copy
 
-# IMPORTANT: DON'T CHANGE OR REMOVE THIS LINE
-#            SO THAT YOUR RESULTS CAN BE VISUALLY SIMILAR
-#            TO ONES GIVEN IN HOMEWORK FILES
+
 random.seed(5710414)
 
 class KMeans:
@@ -19,7 +17,6 @@ class KMeans:
         self.max_iterations = max_iterations
 
     def fit(self):
-        # TODO: Implement this function
         # Find clussters and cluster centers
         # Return nothing, but make sure that self.clusters and self.cluster_centers are filled
         if self.distance_metric == "manhattan":
@@ -28,7 +25,7 @@ class KMeans:
             fit_helper(self, euclidean_dist)
 
     def predict(self, instance):
-        # TODO: Implement this function
+
         # Return best cluster index for the given instance
         if self.distance_metric == "manhattan":
             return np.argmin(manhattan_dist(instance, self.cluster_centers))
