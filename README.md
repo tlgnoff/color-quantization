@@ -1,6 +1,6 @@
 # Color quantization
 
-Color quantization for images with own implementation of K-means algorithm in Python 3.
+Color Image Quantization using own implementation of K-means algorithm in Python 3.
 
 - How to run:
 
