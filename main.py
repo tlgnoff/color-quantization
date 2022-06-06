@@ -15,8 +15,8 @@ def main():
     max_iterations = int(sys.argv[3])
     epsilon = float(sys.argv[4])
 
-    image = Image.open(image_path)
-    inp = Image.Image.getdata(image)
+    with Image.open(image_path) as image:
+    	inp = Image.Image.getdata(image)
 
     print("DONE")
     
